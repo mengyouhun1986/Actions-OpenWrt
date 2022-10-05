@@ -16,8 +16,10 @@
 # Add a feed source
 #echo 'src-git helloworld https://github.com/fw876/helloworld' >>feeds.conf.default
 #echo 'src-git passwall https://github.com/xiaorouji/openwrt-passwall' >>feeds.conf.default
+sed -i '$a src-git kenzo https://github.com/kenzok8/openwrt-packages' feeds.conf.default
+sed -i '$a src-git small https://github.com/kenzok8/small' feeds.conf.default
 git clone https://github.com/esirplayground/luci-app-poweroff.git package/lean/luci-app-poweroff
 git clone https://github.com/rufengsuixing/luci-app-adguardhome.git package/lean/luci-app-adguardhome
 git clone https://github.com/Lienol/openwrt-package.git package/lean/openwrt-package
 git clone https://github.com/thinktip/luci-theme-neobird.git package/lean/luci-theme-neobird
-git clone https://github.com/destan19/OpenAppFilter.git package/OpenAppFilter package/OpenAppFilter
+git clone git clone https://github.com/destan19/OpenAppFilter.git package/OpenAppFilter
